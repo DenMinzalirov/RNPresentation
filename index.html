@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<link rel="import" href="./logoSVG.html">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section data-auto-animate data-background-color="rgb(37, 48, 67)">
+					<img class="r-stretch" src="./logo.png">
+					<aside class="notes">
+						Заметки 1го слайда
+						новая строка
+					</aside>
+				</section>
+				<section data-auto-animate data-background-color="rgb(37, 48, 67)">
+					<h1 style="color: #fae481; font-family: Enriqueta; padding: 10px 20px;">FrontEnd</h1>
+					<div class="r-hstack">
+						<img style="border-radius: 200px;height:200px; width: 200px " src="./assets//den-r.jpg">
+						<div class="r-vstack">
+							<p style="margin-left: 20px;">Минзакиров</p>
+							<p style="margin-left: 20px;">Денис</p>
+						</div>
+					</div>
+					<img style="position: absolute; bottom: -20%; right: 0%; height:50px;" src="./logo.png">
+				</section>
+				<section data-auto-animate data-background-color="rgb(37, 48, 67)">
+					<img class="r-stretch" src="./assets/RNLogo.png">
+					<div class="r-hstack">
+						<img style="border-radius: 200px;height:200px; width: 200px " src="./assets//den-r.jpg">
+						<div class="r-vstack">
+							<p style="margin-left: 20px;">Минзакиров</p>
+							<p style="margin-left: 20px;">Денис</p>
+						</div>
+					</div>
+					<img style="position: absolute; bottom: -20%; right: 0%; height:50px;" src="./logo.png">
+				</section>
+			</section>
+			<section data-auto-animate data-background-color="rgb(37, 48, 67)" data-background-image="./logo.png"
+				data-background-position='95% 95%' data-background-size='15%'>
+				<section data-auto-animate>
+					<img  class="r-stretch" src="./assets/RNLogo.png">
+				</section>
+				<section data-transition="zoom">
+					<img  class="r-stretch" src="./assets/ios-andr.jpg">
+				</section>
+				<section data-auto-animate>
+					<div class="r-hstack">
+						<img style="height: 200px; margin-right: 50px;" src="./assets/objective-c.png">
+						<img src="./assets/java.png">
+					</div>
+					<div class="r-hstack">
+						
+						<pre data-id="code"><p>ObjC</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; margin-right: 30px;line-height: 20px;">
+
+@class RWTScaryBugData;
+
+@interface RWTScaryBugDoc : NSObject
+
+@property (strong) RWTScaryBugData *data;
+@property (strong) UIImage *thumbImage;
+@property (strong) UIImage *fullImage;
+
+- (id)initWithTitle:(NSString*)title 
+rating:(float)rating 
+thumbImage:(UIImage *)thumbImage 
+fullImage:(UIImage *)fullImage;
+
+@end
+						</code></pre>
+						<pre data-id="code"><p>Java</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; line-height: 20px;">
+							protected void onStart() {
+								super.onStart();
+								if (!mBluetoothAdapter.isEnabled()) {
+									Intent enableIntent = 
+										new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+									startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+								}
+								else {
+									if (mCommandService==null)
+										setupCommand();
+								}
+							}
+							private void setupCommand() {
+								mCommandService = new BluetoothCommandService(this, mHandler);
+							}
+						</code></pre>
+					</div>
+				</section>
+
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
