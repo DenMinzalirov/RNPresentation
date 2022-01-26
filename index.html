@@ -103,6 +103,44 @@ fullImage:(UIImage *)fullImage;
 					</div>
 				</section>
 
+				<section data-auto-animate>
+					<div class="r-hstack">
+						<img style="height: 200px; margin-right: 50px;" src="./assets/Kotlin-logo.png">
+						<img src="./assets/Swift_logo_01.png" style="height:200px; width: 200px">
+					</div>
+					<div class="r-hstack">
+						
+						<pre data-id="code"><p>Kotlin</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; margin-right: 30px;line-height: 20px;">
+
+var movieCount = 0
+var songCount = 0
+
+for (item in library) {
+	if (item is Movie) {
+		++movieCount
+	} else if (item is Song) {
+		++songCount
+	}
+} 
+						</code></pre>
+						<pre data-id="code"><p>Swift</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; line-height: 20px;">
+var movieCount = 0
+var songCount = 0
+
+for item in library {
+	if item is Movie {
+		movieCount += 1
+	} else if item is Song {
+		songCount += 1
+	}
+} 
+						</code></pre>
+					</div>
+				</section>
+				<section data-transition="zoom">
+					<img  class="r-stretch" src="./assets/all.png">
+				</section>
+
 			</section>
 
 		</div>
