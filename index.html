@@ -167,10 +167,9 @@ for item in library {
 					<img style="height: 200px; margin-right: 50px;" src="./assets/Facebook_Logo_(2019).png">
 					<img style="height: 200px; margin-right: 50px;"
 						src="./assets/facebook-advertenties-facebook-ads-logo-png-transparent.png">
-					<img style="height: 100px; margin-right: 50px;"
-						src="./assets/walmart-de-m-xico-y-centroam-rica-png-favpng-kSdipADMcFwQ6Q0jCSPy5Ewu3.png">
-					<img style="height: 100px; margin-right: 50px;"
-						src="./assets/png-transparent-bloomberg-terminal-business-bloomberg-government-organization-business-text-people-logo.png">
+					<img style="height: 200px; margin-right: 50px;"
+						src="./assets/Walmart-Logo-Transparent-Free-PNG.png">
+					<img style="height: 200px; margin-right: 50px;" src="./assets/bloomberg.png">
 					<img style="height: 200px; margin-right: 50px;" src="./assets/Instagram.png">
 					<img style="height: 200px; margin-right: 50px;" src="./assets/skype.png">
 
@@ -183,6 +182,10 @@ for item in library {
 			</section>
 
 			<section>
+				<section data-auto-animate style="height: 600px" data-background-color="rgb(37, 48, 67)"
+					data-background-image="./logo.png" data-background-position='95% 95%' data-background-size='15%'>
+					<img class="r-stretch" src="./assets/RNLogo.png">
+				</section>
 				<section data-auto-animate style="height: 600px" data-background-color="rgb(37, 48, 67)"
 					data-background-image="./logo.png" data-background-position='95% 95%' data-background-size='15%'>
 					<img class="r-stretch" src="./assets/RNLogo.png">
@@ -241,22 +244,22 @@ for item in library {
 	
 							export default function App() {
 								return (
-								  <div className="App">
-									  <p>
-										Hello World
-									  </p>
-								  </div>
+								  	<div className="App">
+									  	<p>
+												Hello World
+									  	</p>
+								  	</div>
 								);
 							}
 						</code></pre>
 						<pre data-id="code"><p>React Native</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; line-height: 20px;">
 							export default function App() {
 								return (
-									  <View style={styles.container}>
-										<Text style={styles.paragraph}>
-											  Hello World
-										</Text>
-									  </View>
+									  	<View style={styles.container}>
+											<Text style={styles.paragraph}>
+												Hello World
+											</Text>
+									  	</View>
 								);
 							}
 						</code></pre>
@@ -269,11 +272,12 @@ for item in library {
 					</div>
 				</section>
 
-				<section data-transition="zoom" style="height: 600px" data-background-color="rgb(37, 48, 67)"
+				<section data-auto-animate style="height: 600px" data-background-color="rgb(37, 48, 67)"
 					data-background-image="./logo.png" data-background-position='95% 95%' data-background-size='15%'>
 
 					<h2 data-id="title" style="margin-top: 10px;">А CSS то не настоящий</h2>
-					<div class="r-hstack" style="height: 400px">
+					<!-- class="r-hstack" -->
+					<div style="height: 400px">
 
 						<pre data-id="code"><p>React Native CSS</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; margin-right: 30px;line-height: 20px;">
 	
@@ -282,10 +286,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const LotsOfStyles = () => {
     return (
-      <View style={styles.container}>
-        <Text style={{color: 'red'}}>just red</Text>
-        <Text style={styles.bigBlue}>just bigBlue</Text>
-      </View>
+      	<View style={styles.container}>
+        	<Text style={{color: 'red'}}>just red</Text>
+        	<Text style={styles.bigBlue}>just bigBlue</Text>
+      	</View>
     );
 };
 
@@ -302,12 +306,62 @@ const styles = StyleSheet.create({
 
 export default LotsOfStyles;
 						</code></pre>
-						<img style="height: 300px; margin-right: 5px;" src="./assets/css.png">
+						<!-- <img style="height: 300px; margin-right: 5px;" src="./assets/css.png"> -->
 					</div>
 
-					<p class="fragment fade-up" style="margin-top: 50px;">js объекты</p>
+					<!-- <p class="fragment fade-up" style="margin-top: 50px;">js объекты</p>
 					<p class="fragment fade-up" style="margin-top: -30px;">camelcase обычных стилей как в CSS</p>
-					<p class="fragment fade-up" style="margin-top: -30px;">CSS Flexbox</p>
+					<p class="fragment fade-up" style="margin-top: -30px;">CSS Flexbox</p> -->
+
+				</section>
+
+				<section data-auto-animate style="height: 600px" data-background-color="rgb(37, 48, 67)"
+					data-background-image="./logo.png" data-background-position='95% 95%' data-background-size='15%'>
+
+					<h2 data-id="title" style="margin-top: 10px;">А CSS то не настоящий</h2>
+					<!-- class="r-hstack" -->
+					<div style="display: flex;">
+						<div style="height: 400px">
+
+							<pre data-id="code"><p>React Native CSS</p><code data-line-numbers class="hljs" data-trim style="font-size: 12px; margin-right: 30px;line-height: 20px;">
+	
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const LotsOfStyles = () => {
+    return (
+      	<View style={styles.container}>
+        	<Text style={{color: 'red'}}>just red</Text>
+        	<Text style={styles.bigBlue}>just bigBlue</Text>
+      	</View>
+    );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 50,
+  },
+  bigBlue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+});
+
+export default LotsOfStyles;
+						</code></pre>
+							<!-- <img style="height: 300px; margin-right: 5px;" src="./assets/css.png"> -->
+						</div>
+						<div>
+							<img style="height: 150px; margin-left: 25px;" src="./assets/css.png">
+							<p class="fragment fade-up" style="margin-top: 50px;">js объекты</p>
+							<p class="fragment fade-up">camelcase обычных стилей как в CSS
+							</p>
+							<p class="fragment fade-up">CSS Flexbox</p>
+						</div>
+					</div>
+
+
 
 				</section>
 
@@ -467,6 +521,38 @@ export default LotsOfStyles;
 						<li>Более длительное время инициализации</li>
 						<li>Не подходит для сложных дизайнов, игр, платежных платформ</li>
 					</ul>
+				</section>
+
+				<section data-auto-animate style="height: 600px" data-background-color="rgb(37, 48, 67)"
+					data-background-image="./logo.png" data-background-position='95% 95%' data-background-size='15%'>
+					<img class="r-stretch" src="./assets/RNLogo.png">
+					<div style="display: flex;">
+						<div style="width: 50%;">
+							<h3>Достоинства</h3>
+							<ul>
+								<li>Кроссплатформенный</li>
+								<li>Класный для прототипирования</li>
+								<li>Близко к родной производительности</li>
+								<li>Fast Refresh</li>
+								<li>Все достоинства и вся мощь ReactJS</li>
+								<li>
+									<p style="margin-top: 0px;">Бесплатный
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div style="width: 50%;">
+							<h3>Недостатки</h3>
+							<ul>
+								<li>Минорный релиз</li>
+								<li>Проблемы совместимости</li>
+								<li>Отставание выходов</li>
+								<li>Необходима нативная помощь</li>
+								<li>Не подходит для сложных дизайнов, игр, платежных платформ</li>
+							</ul>
+						</div>
+					</div>
+
 				</section>
 			</section>
 
